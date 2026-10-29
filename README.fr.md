@@ -1,8 +1,11 @@
-# VanoVeil
 
-**Un coin privé dans Chrome.** VanoVeil te donne une barre de liens protégée par mot de passe, un espace de travail caché pour tes onglets et un voile de confidentialité qui couvre l'écran d'une seule touche. Gratuit, open source, et tout reste dans ton navigateur.
+<h1 align="center">VanoVeil</h1>
+<p align="center"><b>Un coin privé dans Chrome.</b><br>
+VanoVeil te donne une barre de liens protégée par mot de passe, un espace de travail caché pour tes onglets et un voile de confidentialité qui couvre l'écran d'une seule touche. Gratuit, open source, et tout reste dans ton navigateur.</p>
+<p align="center"><a href="https://github.com/yassine-aitmohamed/vanoveil/actions/workflows/checks.yml"><img src="https://github.com/yassine-aitmohamed/vanoveil/actions/workflows/checks.yml/badge.svg" alt="Checks"></a> <a href="https://github.com/yassine-aitmohamed/vanoveil/releases/latest"><img src="https://img.shields.io/github/v/release/yassine-aitmohamed/vanoveil?color=4c6ef5" alt="Release"></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="License: MIT"></a> <img src="https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Brave-supported-555" alt="Platforms"></p>
+<p align="center"><a href="README.md">English version</a></p>
 
-[English version](README.md)
+---
 
 <p align="center"><img src="docs/2-private-bar.png" width="520" alt="La barre privée avec des liens d'exemple"></p>
 
@@ -111,6 +114,13 @@ docs/              captures d'écran
 ```
 
 Permissions : `storage`, `favicon`, `tabs`, `bookmarks`, `history`, `downloads` (fichier de sauvegarde et nettoyage de la liste des téléchargements), et accès à tous les sites pour le voile.
+
+## Auteur
+
+VanoVeil est écrit et maintenu par **Yassine Ait Mohamed**, doctorant en mathématiques à l'Université de Sherbrooke. C'est d'abord un outil pour ma propre recherche, partagé dans l'espoir qu'il serve à d'autres.
+
+- Site : [yassine-aitmohamed.github.io](https://yassine-aitmohamed.github.io)
+- Bugs et idées : [ouvrir une issue](https://github.com/yassine-aitmohamed/vanoveil/issues)
 
 ## Licence
 
