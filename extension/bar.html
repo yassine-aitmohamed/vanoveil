@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>VanoVeil</title><link rel="stylesheet" href="bar.css"></head>
+<body>
+<div id="lock" hidden>
+  <div class="mark"></div><div class="brand">VanoVeil</div>
+  <div id="lk-title" class="lt">Enter your password</div>
+  <form id="lk-form" autocomplete="off">
+    <input id="pin" type="password" maxlength="64" placeholder="Password" autocomplete="off">
+    <input id="pin2" type="password" maxlength="64" placeholder="Repeat the password" autocomplete="off" hidden>
+    <button id="lk-go" type="submit">Unlock</button>
+  </form>
+  <div class="hint" id="pinmsg"></div>
+</div>
+<main id="app" hidden>
+  <header><div class="mark sm"></div><input id="q" placeholder="Search your links, tabs, bookmarks, history…" autocomplete="off" spellcheck="false"><button id="gear" title="Settings">⚙</button></header>
+  <div id="space"></div>
+  <div id="list"></div>
+  <footer><button id="abs" title="Move every open Chrome tab into your space and leave Chrome blank">⇢ Move all tabs to my space</button><button id="add">＋ Keep page</button><button id="hbm" title="Copies your bookmarks here, saves a backup file, then removes them from Chrome">⇣ Hide my bookmarks</button></footer>
+  <section id="set" hidden>
+    <h3>Privacy veil</h3>
+    <label><input type="checkbox" id="s-en"> Turn on automatic blur</label>
+    <label><input type="checkbox" id="s-leave"> Blur when the mouse leaves the window</label>
+    <label><input type="checkbox" id="s-wblur"> Blur when I switch to another app</label>
+    <label>Blur after <input type="number" id="s-idle" min="0" max="600"> s without moving <small>(0 = never)</small></label>
+    <label><input type="checkbox" id="s-ex"> Never blur <b id="s-host"></b></label>
+    <p class="hint">Shortcut: ⌥⇧H veils the page at once (and lifts it again).</p>
+    <h3>My space</h3>
+    <label><input type="checkbox" id="s-wipe"> When I leave, erase the sites opened in my space from Chrome's history</label>
+    <p class="hint">⌥⇧Q or one click on the toolbar icon: leave your space at once. Your tabs are put away in VanoVeil and come back when you enter again (they reload).</p>
+    <h3>My bookmarks</h3>
+    <div class="row"><button id="s-exp">⤓ Export a backup</button><button id="s-rest">⇡ Put back into Chrome</button></div>
+    <p class="hint" id="s-favmsg">The backup is a bookmarks .html file that Chrome (or any browser) can import again.</p>
+    <h3>Password</h3>
+    <div class="row"><input id="s-pin" type="password" maxlength="64" placeholder="New password (4+ characters)"><button id="s-pinset">Change</button></div>
+    <label><input type="checkbox" id="s-askin"> Also ask for it inside my space (⌘⇧K)</label>
+    <p class="hint" id="s-pinmsg"></p>
+    <button id="back">← Back</button>
+  </section>
+</main>
+<script src="bar.js"></script>
+</body></html>
